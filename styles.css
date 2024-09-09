@@ -1,0 +1,544 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8; /* Increased line height for readability */
+    margin: 0;
+    padding: 0;
+    background: #d5cebf; /* Ivory */
+    color: #3B3B3B; /* Charcoal Gray */
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    background: #708090; 
+    color: #F4F1E9; /* Light Cream */
+    height: 3rem;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+}
+header h1 {
+    font-family: 'Montserrat', sans-serif; /* Font for header */
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center; /* Center navigation links */
+    align-items: center; /* Align items vertically */
+}
+
+header nav ul li {
+    margin: 0 1rem; /* Space between items */
+}
+
+header nav ul li a {
+    color: #F4F1E9; /* Light Cream */
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+    font-weight: 500; /* Medium weight */
+}
+/* Header Navigation Links Hover Effect */
+header nav ul li a:hover {
+    color: #2f4858;
+    background-color: #F4F1E9; /* Light Cream background */
+    padding: 0.2rem 0.3rem; /* Slight padding for emphasis */
+    border-radius: 4px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center content */
+    padding: 2rem 5rem; /* Use relative units */
+    background: #BFAE9C; /* Background Beige */
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 0; /* Adjust spacing below the image */
+    position: relative; /* Relative positioning to control absolute positioning of the image */
+}
+
+.positioned-image {
+    width: 30vw; /* Relative width */
+    max-width: 250px; /* Cap width to avoid excessive size */
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+    margin: 1rem 0; /* Use relative units */
+}
+
+.positioned-image:hover {
+    transform: scale(1.05);
+}
+
+.name-container {
+    text-align: center;
+}
+
+.name-container h1 {
+    font-family: 'Playfair Display', serif; /* Elegant font for name */
+    font-size: 2rem;
+    color: #333333 ; /* Charcoal Gray */
+    margin: -0.5rem 0; /* Adjust margin */
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center; /* Center social links */
+}
+
+.social-link {
+    margin: 0 0.75rem; /* Use relative units */
+    color: #333333; /* Dark Gray */
+    font-size: 1.5rem; /* Relative font size */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-link:hover {
+    color: #c25450; /* Tomato Red for a vibrant hover effect */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Section Styles */
+section {
+    padding: 1.5rem; /* Use relative units */
+    margin: 2rem auto; /* Increase margin for better spacing */
+    background: #ffffff; /* White Background */
+    border-radius: 8px;
+    max-width: 1300px; /* Max width for readability */
+    width: 90%; /* Ensure section width adjusts on smaller screens */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+}
+
+#about {
+    padding: 1.5rem;
+    background: #efede9; /* Light Beige */
+    border-radius: 8px;
+    width: 90%;
+    text-align: justify;
+    max-width: 900px;
+    margin: 1.5rem auto; /* Space around the About section */
+    margin-top: 1rem; /* Ensure it aligns well with the rest of the content */
+}
+#about h2 {
+    margin-top: -0.4rem;
+    font-family: 'Playfair Display', serif; 
+    color: #4a4a48;
+    font-weight: bold;
+    font-size: 1.5rem; 
+}
+
+/* Footer Styles */
+footer {
+    background: #343a40; /* Dark Gray */
+    color: #ffffff; /* White */
+    text-align: center;
+    padding: 1rem; /* Use relative units */
+    margin-top: 1.5rem; /* Use relative units */
+}
+
+footer a {
+    color: #ffffff; /* White */
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+    font-weight: 500; /* Medium weight */
+}
+
+/* Responsive Media Queries */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row; /* Align items horizontally on medium and larger screens */
+        align-items: flex-start;
+    }
+
+    .image-container {
+        text-align: left;
+        margin-right: 2rem; /* Use relative units */
+    }
+
+    .name-container {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .image-container {
+        margin-right: 3rem; /* Use relative units */
+    }
+
+    .name-container h1 {
+        font-size: 2rem; /* Increase font size for larger screens */
+    }
+
+    .social-links {
+        margin-top: 1rem; /* Use relative units */
+    }
+}
+
+/* Education Section */
+#education {
+    padding: 2rem 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+#education h2 {
+    margin-top: -0.4rem;
+    font-family: 'Playfair Display', serif; 
+    color: #4a4a48;
+    font-weight: bold;
+    font-size: 2.5rem; 
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.education-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.education-icon {
+    font-size: 2rem;
+    color: #596773;
+    margin-right: 1rem;
+}
+
+.education-details {
+    font-family: 'Roboto', sans-serif;
+    color: #4a4a48;
+    line-height: 1.6;
+    width: 100%; /* Full width to allow the date to align right */
+}
+
+.education-details p {
+    display: flex;
+    justify-content: space-between; /* Align date to the right */
+    margin: 0.2rem 0;
+}
+
+.education-details strong {
+    font-family: 'Roboto', sans-serif; /* Body font for general titles */
+    font-size: 1.25rem;
+    color: #4a4a4a; /* Keep this color for other titles */
+}
+
+.education-details .bsc {
+    font-family: 'Playfair Display', serif; /* Elegant font for BSc title */
+    font-size: 1.25rem;
+    color: #3b79a7; /* New color for BSc title */
+}
+
+.education-date {
+    font-family: 'Roboto', sans-serif; /* Consistent with the rest */
+    font-size: 1rem;
+    color: #555555; /* Slightly lighter gray for the date */
+    margin-left: auto; /* Push the date to the end of the line */
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    .education-item {
+        margin-bottom: 2rem;
+    }
+
+    .education-icon {
+        font-size: 2.5rem;
+    }
+
+    .education-details strong {
+        font-size: 1.5rem;
+    }
+}
+/* Skills Section */
+/* General Styles for Skills Section */
+/* General Styles for Skills Section */
+#skills {
+    padding: 2rem 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 2rem auto
+}
+
+#skills h2 {
+    margin-top: -0.4rem;
+    font-family: 'Playfair Display', serif; 
+    color: #4a4a48;
+    font-weight: bold;
+    font-size: 2.5rem; 
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-single {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the AI card */
+    margin-bottom: 2rem;
+}
+
+.skill-card {
+    background: #e0e3d9; /* White background for cards */
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 100%; /* Full width */
+    height: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card-wide {
+    
+    max-width: 900px; /* Double the width of other cards */
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow */
+}
+
+.skill-icon {
+    font-size: 2rem;
+    color: #596773; /* Slate Gray */
+    margin-bottom: 1rem;
+}
+
+.skill-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    color: #4a4a48;
+    margin: 0;
+}
+
+.skill-content p {
+    font-family: 'Roboto', sans-serif;
+    color: #3b3b3b;
+    line-height: 1.6;
+}
+
+/* Two-column layout for skills */
+.skills-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.skills-column .skill-card {
+    width: 100%;
+    max-width: 400px; /* Ensure consistency */
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .skills-single, .skills-columns {
+        width: 100%;
+    }
+}
+/* Individual Project Card */
+/* General Styles for Projects Section */
+#projects {
+    padding: 2rem 1.5rem;
+    background: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow */
+    width: 90%;
+    max-width: 1200px; /* Max width for readability */
+    margin: 2rem auto; /* Centering the section */
+}
+
+#projects h2 {
+    margin-top: -0.4rem;
+    font-family: 'Playfair Display', serif; 
+    color: #4a4a48;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project-card {
+    position: relative;
+    width: calc(30% - 0.5rem); /* Adjust width as needed */
+    height: auto; /* Allow height to adjust based on content */
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #596773; /* Darker background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: space-between; /* Space out content inside the card */
+    margin: 0.5rem; /* Consistent gap between cards */
+    padding: 9px; /* Padding inside the project card */
+}
+.project-icon {
+    color: #fff; /* Match the icon color with the text color */
+    margin-left: 10px; /* Space between the title and icon */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.project-icon:hover {
+    color: #c57b60; /* Orange color on hover */
+}
+
+.project-video {
+    width: 100%;
+    height: auto; /* Adjust height based on video aspect ratio */
+    object-fit: cover; /* Ensures the video covers the square without distortion */
+    display: block;
+    background-color: #000; /* Optional: background color for video if needed */
+}
+
+.project-title {
+    font-family: 'Montserrat', sans-serif; /* Same as other headers */
+    font-size: 17px; /* Slightly larger */
+    font-weight: bold;
+    letter-spacing: 1px; /* Spacing between letters for better readability */
+    text-align: center;
+    color: #fff; /* Keep white text */
+    padding: 2.1px;
+    justify-content: center; /* Center the title text horizontally */
+    align-items: center; /* Center the title text vertically */
+}
+
+.project-info {
+    font-family: 'Playfair Display', serif; /* Updated font for a more elegant look */
+    font-size: 16px; /* Keep the text readable */
+    line-height: 1.6; /* Increase line spacing for readability */
+    color: #ffffff; /* Ensure the color remains readable against the background */
+    text-align: justify; /* Justify the text to align the left and right edges */
+    padding: 10px 20px; /* Add padding for better spacing inside the project description */
+    margin: 0 10px; /* Uniform margins on both sides for consistent alignment */
+    flex-grow: 1; /* Let the description take the rest of the space evenly */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow */
+}
+
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: auto; /* Adjust height based on image aspect ratio */
+    object-fit: cover; /* Ensures the image covers the square without distortion */
+}
+
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: auto; /* Adjust height based on image aspect ratio */
+    object-fit: cover; /* Ensures the image covers the square without distortion */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-card {
+        width: calc(100% - 1rem); /* Full width on small screens */
+    }
+}
+/* Presentations Section */
+/* Presentation Section Styles */
+#presentations {
+    padding: 2rem 1.5rem;
+    background: #f5f5f5; /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow */
+    width: 90%;
+    max-width: 1200px; /* Max width for readability */
+    margin: 2rem auto; /* Centering the section */
+}
+
+#presentations h2 {
+    margin-top: -0.4rem;
+    font-family: 'Playfair Display', serif; 
+    color: #4a4a48;
+    font-weight: bold;
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.presentation-item {
+    display: flex;
+    flex-direction: column; /* Stack title and description vertically */
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #e0e3d9; /* White background for items */
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.presentation-content {
+    display: flex;
+    justify-content: space-between; /* Space between title and date */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 0.5rem;
+}
+
+.presentation-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem; /* Adjust font size */
+    color: #4a4a48; /* Dark Gray */
+    margin: 0; /* Remove margin */
+}
+
+.presentation-date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: #777777; /* Lighter gray for the date */
+}
+
+.presentation-description {
+    font-family: 'Roboto', sans-serif;
+    color: #3b3b3b; /* Slightly lighter gray for descriptions */
+    margin: 0;
+    line-height: 1.6; /* Increase line height for readability */
+}
+.presentation-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow */
+}
