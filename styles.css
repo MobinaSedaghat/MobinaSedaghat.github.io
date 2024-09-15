@@ -400,6 +400,16 @@ html {
     margin-bottom: 1.5rem;
     text-align: center;
 }
+.project-card a {
+    text-decoration: none; /* Removes the underline */
+}
+
+
+/* Optional: Change the color of the link on hover */
+.project-card a:hover .project-title {
+    color: #c25450; /* Or any color you prefer */
+}
+
 
 .projects-container {
     display: flex;
@@ -430,7 +440,7 @@ html {
 }
 
 .project-icon:hover {
-    color: #c57b60; /* Orange color on hover */
+    color: #c25450; /* Orange color on hover */
 }
 
 .project-video {
