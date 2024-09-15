@@ -402,6 +402,12 @@ html {
 }
 .project-card a {
     text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures link inherits the color from the parent */
+}
+
+.project-card a:visited {
+    color: inherit; /* Keeps the visited link color consistent */
+    text-decoration: none; /* Removes the underline for visited links */
 }
 
 
@@ -434,14 +440,15 @@ html {
     padding: 9px; /* Padding inside the project card */
 }
 .project-icon {
-    color: #fff; /* Match the icon color with the text color */
-    margin-left: 10px; /* Space between the title and icon */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    color: #fff; /* Icon default color */
+    margin-left: 10px; /* Space between title and icon */
+    transition: color 0.3s ease; /* Smooth transition */
 }
 
 .project-icon:hover {
     color: #c25450; /* Orange color on hover */
 }
+
 
 .project-video {
     width: 100%;
