@@ -1,4 +1,8 @@
 /* General Styles */
+* {
+    box-sizing: border-box; /* Ensures padding and borders don't affect element width */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.8; /* Increased line height for readability */
@@ -6,6 +10,7 @@ body {
     padding: 0;
     background: #d5cebf; /* Ivory */
     color: #3B3B3B; /* Charcoal Gray */
+    font-size: 1rem;
 }
 
 /* Header Styles */
@@ -14,7 +19,7 @@ header {
     top: 0;
     background: #708090; 
     color: #F4F1E9; /* Light Cream */
-    height: 3rem;
+    height: 4.5rem;
     padding: 1rem;
     text-align: center;
     z-index: 1000;
@@ -71,14 +76,14 @@ header nav ul li a:hover {
     height: auto;
     border-radius: 5%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.5s ease;
+    /*transition: transform 0.5s ease;*/
     margin: 1rem 0; /* Use relative units */
 }
 
-.positioned-image:hover {
+/*.positioned-image:hover {
     transform: scale(1.05);
 }
-
+*/
 .name-container {
     text-align: center;
 }
@@ -119,20 +124,25 @@ section {
     margin: 2rem auto; /* Increase margin for better spacing */
     background: #ffffff; /* White Background */
     border-radius: 8px;
-    max-width: 1300px; /* Max width for readability */
+    max-width: 90%; /* Max width for readability */
     width: 90%; /* Ensure section width adjusts on smaller screens */
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
 }
 
 #about {
     padding: 1.5rem;
-    background: #efede9; /* Light Beige */
+    background: #efede9;
     border-radius: 8px;
-    width: 90%;
     text-align: justify;
+    min-height: 250px;
     max-width: 900px;
-    margin: 1.5rem auto; /* Space around the About section */
-    margin-top: 1rem; /* Ensure it aligns well with the rest of the content */
+    margin: 1.5rem auto;
+}
+
+#about:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Active hover effect */
+    transition: transform 0.8s ease, box-shadow 0.8s ease; /* Smooth transition */
 }
 #about h2 {
     margin-top: -0.4rem;
@@ -157,7 +167,9 @@ footer a {
     font-family: 'Roboto', sans-serif; /* Consistent font */
     font-weight: 500; /* Medium weight */
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* Responsive Media Queries */
 @media (min-width: 768px) {
     .hero {
@@ -541,4 +553,35 @@ footer a {
 .presentation-item:hover {
     transform: translateY(-5px); /* Lift effect on hover */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow */
+}
+#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center; /* Center align the content */
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between icons */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; /* Vertically align icons and text */
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Adjust text color */
+}
+
+.contact-item .icon {
+    width: 24px; /* Icon size */
+    height: 24px;
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Hover effect */
+.contact-item:hover {
+    color: #0073e6; /* Change color on hover */
 }
