@@ -5,19 +5,18 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.8; /* Increased line height for readability */
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background: #d5cebf; /* Ivory */
+    background: #EDE9E8; /* Light Cream */
     color: #3B3B3B; /* Charcoal Gray */
-    font-size: 1rem;
 }
 
 /* Header Styles */
 header {
     position: sticky;
     top: 0;
-    background: #708090; 
+    background: #5D5C54; 
     color: #F4F1E9; /* Light Cream */
     height: 4.5rem;
     padding: 1rem;
@@ -48,7 +47,7 @@ header nav ul li a {
 }
 /* Header Navigation Links Hover Effect */
 header nav ul li a:hover {
-    color: #2f4858;
+    color: #5D5C54;
     background-color: #F4F1E9; /* Light Cream background */
     padding: 0.2rem 0.3rem; /* Slight padding for emphasis */
     border-radius: 4px; /* Rounded corners */
@@ -61,7 +60,7 @@ header nav ul li a:hover {
     flex-direction: column; /* Stack items vertically on small screens */
     align-items: center; /* Center content */
     padding: 2rem 5rem; /* Use relative units */
-    background: #BFAE9C; /* Background Beige */
+    background: #B9A8A2; /* Background Beige */
 }
 
 .image-container {
@@ -91,7 +90,7 @@ header nav ul li a:hover {
 .name-container h1 {
     font-family: 'Playfair Display', serif; /* Elegant font for name */
     font-size: 2rem;
-    color: #333333 ; /* Charcoal Gray */
+    color: #2B2A27 ; /* Charcoal Gray */
     margin: -0.5rem 0; /* Adjust margin */
 }
 
@@ -104,14 +103,14 @@ header nav ul li a:hover {
 
 .social-link {
     margin: 0 0.75rem; /* Use relative units */
-    color: #333333; /* Dark Gray */
+    color: #2B2A27; /* Dark Gray */
     font-size: 1.5rem; /* Relative font size */
     text-decoration: none;
     transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .social-link:hover {
-    color: #c25450; /* Tomato Red for a vibrant hover effect */
+    color: #954B41; /* Tomato Red for a vibrant hover effect */
 }
 html {
     scroll-behavior: smooth;
@@ -154,7 +153,7 @@ section {
 
 /* Footer Styles */
 footer {
-    background: #343a40; /* Dark Gray */
+    background: #403F3A; /* Dark Gray */
     color: #ffffff; /* White */
     text-align: center;
     padding: 1rem; /* Use relative units */
@@ -214,7 +213,7 @@ html {
 #education h2 {
     margin-top: -0.4rem;
     font-family: 'Playfair Display', serif; 
-    color: #4a4a48;
+    color: #363B2B;
     font-weight: bold;
     font-size: 2.5rem; 
     margin-bottom: 1.5rem;
@@ -229,7 +228,7 @@ html {
 
 .education-icon {
     font-size: 2rem;
-    color: #596773;
+    color: #363B2B;
     margin-right: 1rem;
 }
 
@@ -255,7 +254,7 @@ html {
 .education-details .bsc {
     font-family: 'Playfair Display', serif; /* Elegant font for BSc title */
     font-size: 1.25rem;
-    color: #3b79a7; /* New color for BSc title */
+ 
 }
 
 .education-date {
@@ -294,7 +293,7 @@ html {
 #skills h2 {
     margin-top: -0.4rem;
     font-family: 'Playfair Display', serif; 
-    color: #4a4a48;
+    color: #363B2B;
     font-weight: bold;
     font-size: 2.5rem; 
     margin-bottom: 1.5rem;
@@ -315,7 +314,7 @@ html {
 }
 
 .skill-card {
-    background: #e0e3d9; /* White background for cards */
+    background: #EAEEE7; 
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
     padding: 1.5rem;
@@ -337,14 +336,14 @@ html {
 
 .skill-icon {
     font-size: 2rem;
-    color: #596773; /* Slate Gray */
+    color: #363B2B; /* Slate Gray */
     margin-bottom: 1rem;
 }
 
 .skill-content h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
-    color: #4a4a48;
+    color: #363B2B;
     margin: 0;
 }
 
@@ -394,7 +393,7 @@ html {
 #projects h2 {
     margin-top: -0.4rem;
     font-family: 'Playfair Display', serif; 
-    color: #4a4a48;
+    color: #363B2B;
     font-weight: bold;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -413,7 +412,7 @@ html {
 
 /* Optional: Change the color of the link on hover */
 .project-card a:hover .project-title {
-    color: #c25450; /* Or any color you prefer */
+    color: #cc9b99; /* Or any color you prefer */
 }
 
 
@@ -430,7 +429,7 @@ html {
     height: auto; /* Allow height to adjust based on content */
     overflow: hidden;
     border-radius: 10px;
-    background-color: #596773; /* Darker background for contrast */
+    background-color: #697277; /* Darker background for contrast */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
     display: flex;
     flex-direction: column;
@@ -440,15 +439,14 @@ html {
     padding: 9px; /* Padding inside the project card */
 }
 .project-icon {
-    color: #fff; /* Icon default color */
-    margin-left: 10px; /* Space between title and icon */
-    transition: color 0.3s ease; /* Smooth transition */
+    color: #fff; /* Match the icon color with the text color */
+    margin-left: 10px; /* Space between the title and icon */
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 .project-icon:hover {
-    color: #c25450; /* Orange color on hover */
+    color: #954B41; /* Orange color on hover */
 }
-
 
 .project-video {
     width: 100%;
@@ -524,7 +522,7 @@ html {
 #presentations h2 {
     margin-top: -0.4rem;
     font-family: 'Playfair Display', serif; 
-    color: #4a4a48;
+    color: #363B2B;
     font-weight: bold;
     font-size: 2.5rem; /* Larger font size for the title */
     margin-bottom: 1.5rem;
@@ -536,7 +534,7 @@ html {
     flex-direction: column; /* Stack title and description vertically */
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: #e0e3d9; /* White background for items */
+    background: #EAEEE7; /* White background for items */
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
@@ -551,7 +549,7 @@ html {
 .presentation-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem; /* Adjust font size */
-    color: #4a4a48; /* Dark Gray */
+    color: #363B2B; /* Dark Gray */
     margin: 0; /* Remove margin */
 }
 
@@ -570,35 +568,4 @@ html {
 .presentation-item:hover {
     transform: translateY(-5px); /* Lift effect on hover */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow */
-}
-#contact {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    text-align: center; /* Center align the content */
-}
-
-.contact-icons {
-    display: flex;
-    justify-content: center; /* Center items horizontally */
-    gap: 20px; /* Space between icons */
-}
-
-.contact-item {
-    display: flex;
-    align-items: center; /* Vertically align icons and text */
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Adjust text color */
-}
-
-.contact-item .icon {
-    width: 24px; /* Icon size */
-    height: 24px;
-    margin-right: 8px; /* Space between icon and text */
-}
-
-/* Hover effect */
-.contact-item:hover {
-    color: #0073e6; /* Change color on hover */
 }
